@@ -20,8 +20,8 @@ import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation(); // معرفة الصفحة الحالية
-  const hideNavbarPages = ["/", "/dashboard", "/Register"]; // الصفحات التي لن يظهر فيها Navbar
-  const hideFooterPages = ["/", "/dashboard"]; // الصفحات التي لن يظهر فيها Footer
+  const hideNavbarPages = ["/", "/dashboard", "/Home","/Register"]; // الصفحات التي لن يظهر فيها Navbar
+  const hideFooterPages = [ "/dashboard","/Register"]; // الصفحات التي لن يظهر فيها Footer
   
   return (
     <div>

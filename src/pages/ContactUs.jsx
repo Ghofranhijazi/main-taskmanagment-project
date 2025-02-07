@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { database, ref, set } from '../firebase/firebaseConfig'; 
+import { database, ref, set } from '../firebase/firebaseConfig';
 import '../styles/contactus.css';
 import herocontact from '../images/herocontact.jpg';
 
 function ContactUs() {
-    
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -55,23 +55,23 @@ function ContactUs() {
         <div className="contact">
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
             <section className="hero-section position-relative text-white text-center" style={{ minHeight: '50vh', position: 'relative' }}>
-                <img 
-                    src={herocontact} 
-                    className="img-fluid w-100" 
-                    alt="Contact Us" 
+                <img
+                    src={herocontact}
+                    className="img-fluid w-100"
+                    alt="Contact Us"
                     style={{ objectFit: 'cover', height: '50vh' }}
                 />
                 <div className="overlay position-absolute top-0 left-0 w-100 h-100" style={{
-                    background: 'rgba(0, 0, 0, 0.5)', 
-                    display: 'flex', 
-                    alignItems: 'center', 
+                    background: 'rgba(0, 0, 0, 0.5)',
+                    display: 'flex',
+                    alignItems: 'center',
                     justifyContent: 'center',
                     flexDirection: 'column',
                     padding: '20px'
                 }}>
                     <h1 className="fw-bold" style={{ fontSize: '2.5rem', textShadow: '2px 2px 5px rgba(0,0,0,0.5)' }}>We're here to help!</h1>
                     <p className="lead w-75 mx-auto" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
-                        Don't hesitate to reach out to us for more information, any questions, or inquiries about our services. 
+                        Don't hesitate to reach out to us for more information, any questions, or inquiries about our services.
                         We're always ready to help you find the best solutions to meet your needs!
                     </p>
                 </div>
